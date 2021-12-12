@@ -106,7 +106,7 @@ namespace SplitAndMerge
             }
             if (action == DebuggerUtils.DebugAction.SET_BP)
             {
-                TheBreakpoints.AddBreakpoints(this, load);
+                TheBreakpoints.AddBreakpoints(this, load); // 添加断点信息
                 return;
             }
 

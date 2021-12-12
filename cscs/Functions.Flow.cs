@@ -432,7 +432,7 @@ namespace SplitAndMerge
             tempScript.ClassInstance = instance;
 
             Debugger debugger = script != null && script.Debugger != null ? script.Debugger : Debugger.MainInstance;
-            if (debugger != null)
+            if (debugger != null) // 函数StepIn的关键
             {
                 result = debugger.StepInFunctionIfNeeded(tempScript);
             }
